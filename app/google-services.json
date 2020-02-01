@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "574399772172",
+    "firebase_url": "https://chat-app-91c87.firebaseio.com",
+    "project_id": "chat-app-91c87",
+    "storage_bucket": "chat-app-91c87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574399772172:android:8ce79de1b4a2d9da",
+        "android_client_info": {
+          "package_name": "com.mouboukr.sofianeaoufi.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574399772172-orl54h1gvg029lkj8npacu5ojilgm3m6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mouboukr.sofianeaoufi.chat",
+            "certificate_hash": "000b7c7a31486119cf177611c7ad56569ff0d967"
+          }
+        },
+        {
+          "client_id": "574399772172-lnqp9iqcrhemf5vpgo5ki22iccbmm1jb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrlTgelNSSZt-50xgCrBYGF9IRDoTKdX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574399772172-lnqp9iqcrhemf5vpgo5ki22iccbmm1jb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

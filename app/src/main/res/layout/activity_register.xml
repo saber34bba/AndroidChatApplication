@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerdesign"
+    tools:context="com.mouboukr.sofianeaoufi.chat.RegisterActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="casual"
+        android:text="glade to see you in KAlemni "
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/register_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="160dp"
+        android:text="Register"
+        android:textColor="@color/loginColor"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:textAlignment="center"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passengerEmail"
+            android:layout_marginTop="30dp"
+            android:id="@+id/passengerEmail"
+            android:hint="enter your email please"/>
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/passengerPass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passengerEmail"
+            android:layout_marginTop="20dp"
+            android:hint="enter your password "
+            android:inputType="textPassword"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/passengerPass2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passengerEmail"
+            android:layout_marginTop="20dp"
+            android:hint="confirm your password "
+            android:inputType="textPassword" />
+
+        <EditText
+            android:textAlignment="center"
+            android:id="@+id/passenger_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/passengerPhone"
+            android:layout_marginTop="21dp"
+            android:hint="enter your name please" />
+
+
+        <Button
+            android:id="@+id/passengerRegi_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="92dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rectangle_wtih_shadow"
+            android:onClick="passenger_registration"
+            android:text="Register"
+            android:textColor="@color/loginColor" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

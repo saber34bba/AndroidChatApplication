@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/main_allUser_button"
+        android:title="Search" />
+    <item
+        android:id="@+id/main_myProfile_button"
+        android:title="My profile" />
+    <item
+        android:title="friendShip Requests"
+        android:id="@+id/main_friendshipRequest"
+        />
+
+
+
+    <item android:title="sign out"
+        android:id="@+id/main_logout_button"/>
+</menu>

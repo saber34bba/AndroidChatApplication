@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login"
+    android:id="@+id/login_lay"
+    tools:context="com.mouboukr.sofianeaoufi.chat.LoginActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/email_login"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="49dp"
+        android:fontFamily="casual"
+        android:text="Login"
+        android:textColor="@color/loginColor"
+        android:textSize="25sp"
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/password_login"
+        android:layout_marginBottom="13dp"
+        android:fontFamily="casual"
+        android:text="Not yet Registered?!"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:onClick="register"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="  Sign Up"
+        android:textColor="@color/loginColor"
+        android:id="@+id/register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="cursive"
+        android:text="Lets Chat with\nFriends "
+
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:id="@+id/textView" />
+
+
+    <EditText
+        android:id="@+id/email_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/password_login"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="27dp"
+        android:background="@mipmap/email_edit"
+        android:fontFamily="casual"
+        android:hint="Email Address"
+        android:maxLines="1"
+        android:drawableLeft="@drawable/ic_email"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@mipmap/email_edit"
+        android:fontFamily="casual"
+        android:hint="Password"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black" />
+
+
+
+    <Button
+
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/button3"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="17dp"
+        android:background="@mipmap/button_background"
+        android:fontFamily="casual"
+        android:onClick="Login"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginStart="14dp"
+        android:background="@mipmap/twitter"
+        android:id="@+id/button2" />
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:background="@mipmap/facebook"
+        android:id="@+id/button3" />
+
+
+
+</RelativeLayout>

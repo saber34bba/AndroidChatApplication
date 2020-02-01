@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4b549b</color>
+    <color name="colorPrimaryDark">#7b7878</color>
+    <color name="colorAccent">#2a2d99</color>
+    <color name="backgroundFragment">#c7b6b6</color>
+    <color name="ownDarkColor">#414045</color>
+    <color name="ownGreenColor">#40a740</color>
+    <color name="ownGrenColor">#f168da60</color>
+    <color name="chatColor">#6145bf</color>
+    <color name="loginColor">#ca0f3e</color>
+    <color name="myColor">#7c14a6</color>
+    <color name="newColor">#b962dc</color>
+
+
+
+
+
+
+</resources>

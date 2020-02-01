@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="1dp">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/chat_left_msg_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:background="@drawable/frind_chat_background"
+        android:orientation="horizontal">
+
+
+        <!--TextView
+            android:paddingLeft="5dp"
+            android:id="@+id/chat_left_msg_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="casual"
+            android:paddingRight="15dp"
+            android:text=""
+            android:textAlignment="center" -/>!-->
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="visible"
+        android:background="@drawable/mychat_background"
+        android:id="@+id/chat_right_msg_layout"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        >
+
+        <TextView
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text=""
+            android:id="@+id/chat_right_msg_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+<RelativeLayout
+    android:id="@+id/relativeLay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/chat_right_msg_ayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left"
+        android:layout_toEndOf="@+id/imageView"
+        android:background="@drawable/frind_chat_background"
+        android:orientation="vertical">
+
+<TextView
+    android:padding="2dp"
+    android:id="@+id/chat_left_msg_text_view"
+    android:layout_margin="15dp"
+    android:textAlignment="center"
+    android:text=""
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="56dp"
+        android:background="@mipmap/facebook" />
+</RelativeLayout>
+</LinearLayout>

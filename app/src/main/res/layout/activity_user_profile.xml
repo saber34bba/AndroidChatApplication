@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mouboukr.sofianeaoufi.chat.UserProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView_ProfileCoverture"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/african_elephant" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="@drawable/profile_coverture">
+        <android.support.v7.widget.Toolbar
+            android:background="@null"
+            android:id="@+id/user_profile_toolbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="1050dp"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/rectangle_coverture" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/profile_friend_circle"
+            android:src="@drawable/ic_action_group" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/profile_friend_circle"
+            android:src="@drawable/ic_chat_asset" />
+
+        <ImageView
+            android:id="@+id/userImageView"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@+id/imageView3"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/imageView2"
+            android:background="@drawable/person_bkg"
+            android:onClick="click" />
+
+        <TextView
+            android:id="@+id/user_name_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/userImageView"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <Button
+
+        android:background="@mipmap/bottom_chat"
+        android:layout_margin="50dp"
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="162dp"
+        android:onClick="saveInfo"
+        android:text="save" />
+
+
+    <RelativeLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_ProfileCoverture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/dialog_holo_dark_frame">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/white" />
+
+
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/imageView5"
+            android:padding="5dp"
+            android:text="Friendship Requests received"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/friendRequestNumber_txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_marginEnd="76dp"
+            android:layout_toStartOf="@+id/imageView5"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7"
+            android:layout_alignBottom="@+id/textView7"
+            android:layout_toEndOf="@+id/imageView5"
+            android:text="Friendship Requests sended"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:id="@+id/frd_send_txtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView7"
+            android:layout_marginStart="63dp"
+            android:layout_toEndOf="@+id/imageView5"
+            android:text="0" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/rectangle_wtih_shadow"
+         android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="36dp">
+
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email :"
+            android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/email_txtView"
+                android:textColor="@color/loginColor"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="15dp"
+    android:layout_below="@id/ll1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:text="  Friends Number : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/friendNumber_txtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="43dp"
+        android:layout_toStartOf="@+id/imageView5"
+        android:text="0"
+        android:textColor="@color/loginColor"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

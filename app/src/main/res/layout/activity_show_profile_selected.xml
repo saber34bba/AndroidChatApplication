@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_pricipale"
+    android:visibility="visible"
+    android:background="@drawable/pexels_pic"
+    tools:context="com.mouboukr.sofianeaoufi.chat.ShowProfileSelectedActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/cardView"
+            android:layout_alignStart="@+id/cardView"
+            android:layout_marginStart="12dp"
+            android:text="Friends Number"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/friendNumber_txtVw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15sp"
+            android:text=""
+            android:textSize="15sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/profile_background"
+        android:id="@+id/relativeLayout3">
+
+        <ImageView
+            android:id="@+id/other_profile_image"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="13dp"
+            android:src="@drawable/person_bkg" />
+
+        <TextView
+            android:id="@+id/profile_nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="19dp"
+            android:layout_toEndOf="@+id/other_profile_image"
+            android:text="name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/already_friend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:layout_marginEnd="11dp"
+        android:background="@color/colorPrimary"
+        android:drawableRight="@drawable/ic_check"
+        android:fontFamily="casual"
+        android:text=" Friend"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <Button
+
+            android:id="@+id/ShowProfil_sendRequetButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@color/chatColor"
+            android:fontFamily="casual"
+            android:onClick="send"
+            android:text="Send FriendShip Request"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/Decline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:onClick="declineRequest"
+            android:text="ignore this request"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/cardView"
+        android:layout_margin="50sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+      <TextView
+          android:textColor="@android:color/black"
+          android:layout_marginLeft="5sp"
+          android:layout_marginBottom="5sp"
+          android:layout_marginTop="5sp"
+          android:textSize="20sp"
+          android:text="Email : "
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:id="@+id/emailFriend_txt"
+            android:layout_marginBottom="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
